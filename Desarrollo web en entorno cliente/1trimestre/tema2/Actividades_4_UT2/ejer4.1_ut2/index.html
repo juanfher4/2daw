@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ejer_1</title>
+    <!-- 
+        Actividad 1:
+        Crea un programa que pida al usuario que introduzca una edad y muestre el siguiente mensaje en función del número introducido:
+
+        ·        0-12: Niño
+
+        ·        13-26: Joven
+
+        ·        26-60: Adulto
+
+        ·        >60: Jubilado
+
+        Para guardar un valor del usuario utilizamos el siguiente código:
+
+        var respuesta = prompt (“Mensaje”);
+
+        También comprobará que no se meta un número menor de 0. Comenta el código con los comentarios que estimes necesarios. 
+     -->
+  </head>
+  <body>
+    <script>
+
+      while (true) {
+        var num = prompt("1. Introducir una edad\n2. Salir");
+        if (num=="1") {
+            respuesta = prompt("Introduce la edad");
+            if (respuesta>=0 && respuesta<=12) {
+                alert("Es niño");
+            }
+            else if (respuesta<=26) {
+                alert("Es joven");
+            }
+            else if (respuesta<=60) {
+                alert("Es adulto");
+            }
+            else if (respuesta<=130) {
+                alert("Es jubilado");
+            }
+            else if (respuesta>130) {
+                alert("Te has pasado, no es Yoda.");
+            }
+            else alert("Valor incorrecto.");
+        }
+        else if (num=="2") {
+            break
+        } else {
+            alert("Error. Introduce un número entre el 1 y el 2");
+        }
+    }
+
+    </script>
+  </body>
+</html>

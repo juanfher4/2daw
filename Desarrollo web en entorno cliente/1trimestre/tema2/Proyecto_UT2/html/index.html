@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Unidad 2</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      
+    </header>
+    <main>
+      <div class="cont">
+        <div class="row sin-margen mt-5 justify-content-center">
+
+          <div class="col carta-box col-5 m-3">
+
+            <div class="carta">    
+              <div class="cara">
+                <div class="row">
+                  <div class="col-12">
+                    <h2>Calculadora de IMC</h2>
+                  </div>
+                  <div class="col-12">
+                    <form action="" onsubmit="calcularIMC()">
+                            <p>Dime tu altura: <input type="number" step="0.01" name="altura" required></p>
+                            <p>Dime tu peso en kg: <input type="number" step="0.01" name="peso" required></p>
+    
+                        <input class="button b1" type="submit" value="Mostrar">
+                        <input class="button b2" type="reset" value="Borrar">
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="cara detras">
+                <div id="resultado_imc"></div>
+                <button class="button b_volver" onclick="volver()">Volver</button>
+              </div>    
+            </div>
+            
+          </div>
+
+          <div class="col carta-box col-5 m-3">
+
+            <div class="carta">
+              <div class="cara">
+                <div class="row">
+                  <div class="col-12">
+                    <h2>Calculadora de FCM</h2>
+                  </div>
+                  <div class="col-12">
+                    <form action="" onsubmit="calcularFCM()">
+                            <p>Dime tu edad: <input type="number" name="edad" required></p>
+                            <p>Dime tu sexo: <input type="text" name="sexo" required></p>
+    
+                        <input class="button b1" type="submit" value="Mostrar">
+                        <input class="button b2" type="reset" value="Borrar">
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="cara detras">
+                <div id="resultado_fcm"></div>
+                <button class="button b_volver" onclick="volver()">Volver</button>
+              </div>  
+            </div>
+
+          </div>
+
+          <div class="col col-5 m-3">
+
+            <div class="carta">
+              <div class="cara">
+                <h2>Calculadora de categoría</h2>
+              </div>
+              <div class="cara detras">
+                <div id="resultado_categoria"></div>
+              </div>  
+            </div>
+
+          </div>
+
+          <div class="col col-5 m-3">
+
+            <div class="carta">
+              <div class="cara">
+                <h2>Horario de la asociación</h2>
+              </div>
+              <div class="cara detras">
+                <div id="resultado_asociación"></div>
+              </div>  
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p><i>2º DAW</i></p>
+      <p><i>Desarrollo Web En Entorno Cliente</i></p>
+      <p><i>Juan Fernández Herreros</i></p>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>

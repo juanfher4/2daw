@@ -1,0 +1,68 @@
+* {
+    font-family: verdana;
+    font-size: 10pt;
+    color: black;
+    background-color: rgb(174, 174, 174);
+}
+
+#titulo {
+    font-size: 40pt;
+    text-align: center;
+    color: rgb(83, 83, 83);
+    text-shadow: rgb(255, 0, 0) 1px 0 10px;
+}
+
+.naranja p, b {
+    color: orange;
+    background-color: blue;
+}
+
+.naranja p {
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.naranja {
+    border-radius: 7px;
+    margin: 5px;
+    box-shadow: 7px 5px 5px rgb(69, 63, 125);
+}
+
+.naranja:hover {
+    box-shadow: 5px 3px 3px rgb(69, 63, 125);
+}
+
+.consola p{
+    color: green;
+    background-color: black;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.consola {
+    border-radius: 7px;
+    margin: 5px;
+    box-shadow: 7px 5px 5px rgb(84, 84, 84);
+}
+
+.consola:hover {
+    box-shadow: 5px 3px 3px rgb(84, 84, 84);
+}
+
+.imp {
+    margin-top: 30px;
+    text-align: center;
+}
+.importante {
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 4px 2px 2px rgb(84, 84, 84);
+    margin-inline: 3px;
+    background-color: rgb(197, 197, 141);
+}
+
+.importante:hover {
+    background-color: yellow;
+    box-shadow: 5px 3px 3px rgb(84, 84, 84);
+}

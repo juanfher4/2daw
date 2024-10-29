@@ -1,0 +1,12 @@
+body {
+    background-color: lightgreen;
+}
+
+section {
+    background-color:lightyellow;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 22%;
+}

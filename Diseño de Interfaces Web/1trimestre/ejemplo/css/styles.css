@@ -1,0 +1,75 @@
+*{
+    font-family: rufina;
+    text-decoration: none;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: #2c3e50; /* Un azul oscuro */
+}
+
+.navbar a{
+    float: left;
+    left: 50%;
+}
+
+.row {
+    margin-left: -3.5% !important;
+    margin-right: -3.5% !important;
+}
+
+.contacto main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.img {
+    max-height: 450px;
+}
+
+.carousel-caption {
+    background-color: rgba(203, 231, 255, 0.521);
+}
+
+.carousel-caption:hover {
+    background-color: rgba(73, 102, 132, 0.521);
+}
+
+.carousel-caption h5, p {
+    color: black;
+}
+
+.carousel-caption:hover h5:hover, p:hover {
+    color: white;
+}
+
+.social-links .bi{
+    font-size: 25px;
+    padding-left: 8px;
+    color: black;
+}
+
+.social-links .bi-twitter:hover{
+    font-size: 30px;
+    color: rgb(29, 161, 242);
+}
+
+.social-links .bi-facebook:hover{
+    font-size: 30px;
+    color: rgb(66, 103, 178);
+}
+
+.social-links .bi-instagram:hover{
+    font-size: 30px;
+    color: rgb(193, 53, 132);
+}
+
+.card {
+    width: 18rem;
+    justify-content: center;
+}

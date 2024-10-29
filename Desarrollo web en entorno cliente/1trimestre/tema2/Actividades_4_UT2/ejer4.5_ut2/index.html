@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad5</title>
+    <!-- 
+        Actividad 5
+        Modifica el ejercicio anterior de la siguiente forma:
+
+        · En primer lugar, se carga un prompt donde pregunta: “¿Cuál fue el primer presidente de la democracia española?”
+
+        · En caso de que el usuario introduzca mal nombre y apellido, muestre como mensaje: “ERROR. Inténtelo de nuevo. ¿Cuál fue el primer presidente de la democracia española?”
+
+        · En caso de que el usuario introduzca el nombre del presidente (solamente) el prompt muestre como mensaje “Te falta el apellido. ¿Cuál fue el primer presidente de la democracia española?”.
+
+        · En caso de que el usuario introduzca el apellido del presidente (solamente) el prompt muestre como mensaje “Te falta el nombre. ¿Cuál fue el primer presidente de la democracia española?”.
+
+        Comenta el código con los comentarios que estimes necesarios. 
+     -->
+  </head>
+  <body>
+    <script>
+        do {
+            var respuesta = prompt("¿Cuál fue el primer presidente de la democracia española? ");
+            if (respuesta=="Adolfo Suárez") {
+                alert("Correcto!!")
+                break
+            } else if (respuesta=="Adolfo") {
+                alert("Te falta el apellido");
+            } else if (respuesta=="Suárez") {
+                alert("Te falta el nombre");
+            } else {
+                alert("ERROR. Inténtelo de nuevo");
+            }
+        } while (!(respuesta=="Adolfo Suárez"));
+    </script>
+  </body>
+</html>

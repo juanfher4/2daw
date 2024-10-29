@@ -1,0 +1,63 @@
+* {
+    font-family: rufina;
+}
+
+.navbar {
+    transition: all 0.6s;
+}
+
+.container {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+}
+
+.header {
+    background-image: url("img/fondo.png");
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+    color: white;
+}
+
+.carousel-caption {
+    text-shadow: 2px 2px 3px black;
+}
+
+.footer {
+    text-align: left;
+    background-image: url("img/rayas.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.footer img {
+    max-width: 200px;
+}
+
+.nav, .section, .aside {
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.section img, .aside img {
+    max-width: 250px;
+    border-radius: 10px;
+
+}
+
+.section img:hover, .aside img:hover {
+    max-width: 260px;
+}
+
+.section p, .aside p {
+    color: rgb(211, 211, 211);
+}
+
+.article1, .article2 {
+    color: white;
+    border-radius: 10px;
+}

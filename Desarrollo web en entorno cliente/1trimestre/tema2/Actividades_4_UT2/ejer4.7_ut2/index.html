@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad7</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 
+        Actividad 7
+        Realizar una pequeña aplicación en JavaScript que muestre lo siguiente:
+
+        Tabla de multiplicar del 7. Tabla de sumar del 8. Tabla de dividir del 9.
+
+        Utilizar los tres tipos de bucles que hay en JavaScript (para cada número un tipo de bucle diferente).
+
+        Que tu aplicación también imprima el resultado de las siguientes operaciones empleando desplazamiento de bits:
+
+        125 / 8=
+
+        40 x 4=
+
+        25 / 2=
+
+        10 x 16=
+     -->
+  </head>
+  <body>
+    <section>
+      <div>
+        <script>
+          for (i=0;i<11;i++) {
+              multiplicar = i*7;
+              document.write(i + " * 7 = " + multiplicar + "<br>");
+            }
+        </script>
+      </div>
+      <br>
+      <div>
+        <script>
+          var num = 0;
+          while (num < 11) {
+            sumar = num+8;
+            document.write(num + " + 8 = " + sumar + "<br>");
+            num++;
+          }
+      </script>
+      </div>
+      <br>
+      <div>
+        <script>
+          num = 0;
+          do {
+            dividir = num/9;
+            document.write(num + " / 9 = " + dividir + "<br>");
+            num++;
+          } while (num<11);
+        </script>
+      </div>
+    </section>
+  </body>
+</html>

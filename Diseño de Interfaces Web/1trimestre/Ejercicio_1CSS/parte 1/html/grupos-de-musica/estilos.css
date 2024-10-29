@@ -1,0 +1,48 @@
+* {
+    font-family: Verdana;
+}
+
+h1 {
+    color: #333;
+    font-size: 20px;
+}
+
+h2 {
+    color: #666;
+    font-size: 16px;
+}
+
+img {
+    width: 400px;
+    height: 200px;
+}
+
+thead td{
+    color: #000;
+    font-size: 14px;
+    text-align: center;
+    border: 0px, solid, white;
+}
+
+tbody tr:first-child td {
+    background-color: #666;
+    color: white;
+    text-align: center;
+}
+
+tbody td {
+    border: 1px, solid, black;
+    padding: 10px;
+    font-size: 12px;
+    background-color: #fff;
+}
+
+tbody tr:last-child td {
+    background-color: #ccc;
+    text-align: center;
+}
+
+a {
+    color: blue;
+    font-size: 12px;
+}

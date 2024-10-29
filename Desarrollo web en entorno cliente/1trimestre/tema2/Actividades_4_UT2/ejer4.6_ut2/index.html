@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad6</title>
+    <!-- 
+        Actividad 6
+        Modifica el programa Actividad 4_ifelse para que realice la misma operación pero utilizando un switch.
+     -->
+  </head>
+  <body>
+    <script>
+        do {
+            var respuesta = prompt("¿Cuál fue el primer presidente de la democracia española? ");
+            switch (respuesta) {
+                case "Adolfo Suárez":
+                    alert("Correcto!!");
+                    break;
+                case "Adolfo":
+                    alert("Te falta el apellido");
+                    break;
+                case "Suárez":
+                    alert("Te falta el nombre");
+                    break;
+                default:
+                    alert("ERROR. Inténtelo de nuevo");
+                    break;
+            }
+        } while (!(respuesta=="Adolfo Suárez"));
+    </script>
+  </body>
+</html>
