@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(242, 194, 204);
+    border-bottom: 1px solid rgb(154, 53, 75);
+    padding-top: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.accordion {
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 2px 25px 0 rgba(154, 53, 75, .18);
+}
+
+.accordion-button {
+    background-color: rgb(194, 99, 119) !important;
+    color: white !important;
+}
+
+.accordion-button:active, .accordion-button:focus {
+    border: none;
+}
+
+.accordion-button:hover {
+    background: rgb(230, 153, 170) !important;
+}
+
+.accordion input {
+    margin: 5px;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+footer {
+    text-align: center;
+    display: flex;
+    background-color: rgb(154, 53, 75);
+    color: rgb(249, 227, 232);
+    position: absolute;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-top: 12px;
+}

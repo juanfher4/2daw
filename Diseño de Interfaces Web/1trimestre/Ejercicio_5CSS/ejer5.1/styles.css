@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+}
+
+#flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    margin: 0 auto;
+}
+
+#column1 {
+    width: 260px;
+}
+
+#column2 {
+    width: 700px;
+}
+
+.ul2 {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.ul2 li {
+    flex: 1;
+    margin: 4px;
+}
