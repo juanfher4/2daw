@@ -1,0 +1,204 @@
+* {
+    text-decoration: none !important;
+}
+
+body {
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.2) !important;
+    transition: .2s;
+}
+
+header {
+    background-color: #b2f4f1;
+}
+
+.nav-link {
+    color: #015451 !important;
+}
+
+.datos, .map {
+    background-color: #08b8b2;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    color: #f6ffff;
+}
+
+.datos .btn {
+    background-color: #f6ffff !important;
+    color: #028985;
+    transform: scale(1);
+    transition: transform 0.5, background-color 0.5s, color 0.5s !important;
+    border: solid #f6ffff 1px !important;
+}
+
+.datos .btn:hover {
+    background-color: #08b8b2 !important;
+    color: #f6ffff;
+    transform: scale(1.1);
+}
+
+.productos {
+    background-color: #c6faf8;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    color: #015451;
+}
+
+.productos .btn {
+    background-color: #015451 !important;
+    color: #c6faf8;
+    transform: scale(1.05);
+    transition: .5 !important;
+    border: solid #015451 1px !important;
+}
+
+.productos .btn:hover {
+    background-color: #c6faf8 !important;
+    color: #015451;
+    transform: scale(1.05);
+}
+
+.datos img, .productos img, .map img {
+    border-radius: 10px;
+    transition: 0.5 !important;
+    box-shadow: 10px 5px 30px -7px rgba(0,0,0,0.75);
+}
+
+.datos img:hover, .productos img:hover, .map img:hover {
+    transform: rotate(3deg) !important;
+}
+
+.servicios .servicio-item {
+    background-color: #f6ffff !important;
+    box-shadow: 10px 5px 30px -7px rgba(0,0,0,0.55);
+    padding: 50px 30px;
+    transition: all ease-in-out 0.4s;
+    height: 100%;
+}
+
+.icon_servicios {
+    position: relative;
+}
+
+.servicio-item:hover .icon_servicios {
+    animation: bote 0.8s infinite alternate !important;
+}
+
+@media screen and (max-width: 850px){
+    .mapa{
+            max-width: 95%;
+        }
+    }
+    .cont_map h2{
+        font-size: 3rem;
+        color: white !important;
+
+    }
+
+@media screen and (max-width: 768px) {
+    .datos img, .productos img, .map img {
+        width: 100%; 
+        height: auto;
+    }
+
+    .mapa {
+        width: 100%;
+        height: 300px; 
+    }
+
+    .social_icons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.title-productos {
+    color: #015451 !important;
+    border-bottom: solid 1px #028985;
+    transition: 0.5s !important;
+}
+
+.title-productos:hover {
+    border-bottom: solid 2px #028985;
+    margin-inline: 400px;
+}
+
+.card {
+    border: none !important;
+    transition: 0.5s !important;
+}
+
+.card:hover {
+    transform: scaleY(1.05);
+}
+
+.card1 {
+    background-color: #b2f4f1 !important;
+    color: #015451 !important;
+}
+
+.card2 {
+    background-color: #028985 !important;
+    color: #f6ffff !important;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(67, 109, 107);
+    color: #b2f4f1;
+}
+
+footer a {
+    color: #b2f4f1;
+}
+
+footer a:hover {
+    color: #ffffff !important;
+    transform: scale(1.1) !important;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.footer-brand {
+    transform: scale(1);
+    transition: transform 5s;
+}
+
+.footer-brand:hover {
+    transform: scale(0.2);
+}
+
+.social_icons {
+    display: flex;
+    grid-auto-flow: row;
+    gap: 5px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+
+}
+
+.bi:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+    color: #f6ffff;
+}
+
+@keyframes bote {
+    0% {
+        padding-bottom: 0;
+    }
+    50% {
+        padding-bottom: 10px;
+    }
+    100% {
+        padding-bottom: 0;
+    }
+}

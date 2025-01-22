@@ -9,8 +9,9 @@ body {
     font-family: "Crimson Text", serif;
     font-style: normal;
     margin: 0;
-    width: 100vw;
-    height: 100vh;
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
 }
 
 main {
@@ -38,8 +39,8 @@ main {
     transform: scale(1.02);
     transition: 200ms;
     box-shadow: 2px 2px 1px 0px rgb(50, 152, 7);
-    color: rgb(61, 180, 10);
-    background-color: rgb(198, 231, 197);
+    color: rgb(198, 231, 197);
+    background-color: rgba(38, 202, 29, 0.658);
 }
 
 .carta-box {
@@ -59,6 +60,11 @@ main {
 
 .cara {
     backface-visibility: hidden;
+}
+
+.cara a {
+    text-decoration: none;
+    color: rgb(214, 240, 203);
 }
 
 .cara.detras {
@@ -83,28 +89,26 @@ main {
     color: rgb(186, 230, 167);
 }
 
-input {
+input, select {
     background-color: rgb(165, 236, 135);
-    color: rgb(71, 200, 16);
+    color: rgb(48, 150, 5);
     padding: 4px 15px;
     border: 2px solid rgb(71, 200, 16);
     border-radius: 10px;
     margin-top: 5px;
 }
 
-input:hover {
-    background-color: rgb(71, 200, 16) ;
-    color: rgb(165, 236, 135);
-    border: 1px solid rgb(165, 236, 135);
+input:focus-visible, select:focus-visible {
+    outline: none;
 }
 
 footer {
     display: flex;
     background-color: rgb(71, 200, 16);
     color: rgb(214, 240, 203);
-    position: absolute;
     bottom: 0;
     width: 100%;
     justify-content: space-evenly;
     padding-top: 15px;
+    margin-top: 30px
 }

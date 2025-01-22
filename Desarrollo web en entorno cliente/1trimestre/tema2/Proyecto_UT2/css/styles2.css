@@ -1,0 +1,54 @@
+body {
+    background-color: #87c95d;
+    background-image: url(../img/fondo-verde-claro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: "Crimson Text", serif;
+    font-style: normal;
+    margin: 0;
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+    padding-bottom: 20px;
+}
+
+table {
+    background-color: rgb(37, 202, 29);
+    color: rgb(214, 240, 203);
+    padding: 10px;
+    margin: auto;
+    border-radius: 7px;
+    box-shadow: 6px 6px 5px 0px rgb(50, 152, 7);
+    max-width: 100px;
+    transition: 250ms;
+    text-align: center;
+}
+
+table {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid rgb(50, 152, 7);
+    padding: 10px;
+    text-align: center;
+}
+
+a {
+    background-color: rgb(165, 236, 135);
+    color: rgb(71, 200, 16);
+    padding: 4px 15px;
+    border: 2px solid rgb(71, 200, 16);
+    border-radius: 10px;
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+a:hover {
+    background-color: rgb(71, 200, 16) ;
+    color: rgb(186, 230, 167);
+}

@@ -1,0 +1,4 @@
+CREATE DATABASE zoo;
+USE zoo;
+
+CREATE TABLE 

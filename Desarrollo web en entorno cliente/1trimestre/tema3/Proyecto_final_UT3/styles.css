@@ -12,6 +12,9 @@ body {
     font-weight: 700;
     font-style: normal;
     margin: 0;
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
 }
 
 header {
@@ -25,30 +28,104 @@ h1 {
 }
 
 .accordion {
-    max-width: 600px;
+    max-width: 700px;
     margin: 50px auto;
-    box-shadow: 0 2px 25px 0 rgba(154, 53, 75, .18);
+    box-shadow: 0 2px 25px 0 rgba(154, 53, 75, .68);
+}
+
+.accordion-collapse {
+    
+    transition: .3s !important;
 }
 
 .accordion-button {
     background-color: rgb(194, 99, 119) !important;
     color: white !important;
+    position: relative;
+    box-shadow: none !important;
 }
 
 .accordion-button:active, .accordion-button:focus {
-    border: none;
+    border: none !important;
 }
 
 .accordion-button:hover {
     background: rgb(230, 153, 170) !important;
 }
 
+.accordion-button::after {
+    content: "";  
+    transition: .5s !important;
+    border-radius: 3px;
+    background: #fff;
+    transform: scale(1.2);
+}
+
 .accordion input {
     margin: 5px;
 }
 
+input {
+    border-radius: 3px;
+    border-color: rgb(194, 99, 119) !important;
+    color: rgb(194, 99, 119) !important;
+    padding: 4px 8px;
+}
+
 input:focus-visible {
     outline: none;
+}
+
+.btn {
+    color: rgb(194, 99, 119) !important;
+    border: 2px solid rgb(194, 99, 119) !important;
+    transition: .2s;
+}
+
+.btn:hover {
+    color: white !important;
+    background-color: rgb(194, 99, 119) !important;
+}
+
+.btn:active {
+    background-color: rgb(204, 142, 155) !important;
+    transform: scale(0.90);
+}
+
+.btn_num_random {
+    max-width: 140px !important;
+    max-height: 50px !important;
+    font-size: 14px !important;
+}
+
+table {
+    text-align: center;
+}
+
+.titulo_tabla {
+    font-size: 22px;
+}
+
+th {
+    border: 2px solid rgb(194, 99, 119) !important;
+    color: rgb(194, 99, 119);
+    padding: 5px;
+}
+
+td {
+    border: 2px solid rgb(223, 117, 140) !important;
+    color: rgb(194, 99, 119);
+    padding: 4px;
+    background-color: #ffeef2;
+}
+
+.mostrar_p {
+    border: 2px solid rgb(223, 117, 140) !important;
+    color: rgb(194, 99, 119);
+    padding: 4px;
+    background-color: #ffeef2;
+    border-radius: 7px;
+    margin-top: 15px;
 }
 
 footer {
@@ -56,8 +133,6 @@ footer {
     display: flex;
     background-color: rgb(154, 53, 75);
     color: rgb(249, 227, 232);
-    position: absolute;
-    width: 100%;
     justify-content: space-evenly;
     padding-top: 12px;
 }

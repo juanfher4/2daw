@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorías Deportivas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>	
+        <h1>Categorías Deportivas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="imc.html">IMC</a></li>
+                <li><a href="fcm.html">FCM</a></li>
+                <li><a href="categoria.html">Categorías</a></li>
+                <li><a href="horario.html">Horario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Introduce tu año de nacimiento para ver tu categoría</h2>
+        <form id="categoriaForm">
+            <label for="anioNacimiento">Año de Nacimiento:</label>
+            <input type="number" id="anioNacimiento" name="anioNacimiento" min="1900" max="2023" required>
+            <br><br>
+            <button type="button" onclick="calcularCategoria()">Calcular Categoría</button>
+        </form>
+        <p id="resultado"></p>
+
+        <h3>Listado de Categorías</h3>
+        <ul>
+            <li><strong>Micros:</strong> 4-5 años</li>
+            <li><strong>Prebenjamín:</strong> 6-7 años</li>
+            <li><strong>Benjamín:</strong> 8-9 años</li>
+            <li><strong>Alevín:</strong> 10-11 años</li>
+            <li><strong>Infantil:</strong> 12-13 años</li>
+            <li><strong>Cadete:</strong> 14-15 años</li>
+            <li><strong>Juvenil:</strong> 16-17 años</li>
+            <li><strong>Senior:</strong> 18+ años</li>
+        </ul>
+
+        <script>
+            function calcularCategoria() {
+                const nacimiento = parseInt(document.getElementById("anioNacimiento").value);
+                const resultado = document.getElementById("resultado");
+
+               
+                if (isNaN(nacimiento) || nacimiento < 1900 || nacimiento > 2024) { 
+                    resultado.textContent = "Por favor, introduce un año de nacimiento válido.";
+                    return;
+                }
+            
+                
+                let edad = 2024 - nacimiento; 
+                let categoria = "";
+            
+                
+                if (edad >= 4 && edad <= 5) {
+                    categoria = "Micros";
+                } else if (edad >= 6 && edad <= 7) {
+                    categoria = "Prebenjamín";
+                } else if (edad >= 8 && edad <= 9) {
+                    categoria = "Benjamín";
+                } else if (edad >= 10 && edad <= 11) {
+                    categoria = "Alevín";
+                } else if (edad >= 12 && edad <= 13) {
+                    categoria = "Infantil";
+                } else if (edad >= 14 && edad <= 15) {
+                    categoria = "Cadete";
+                } else if (edad >= 16 && edad <= 17) {
+                    categoria = "Juvenil";
+                } else if (edad >= 18) {
+                    categoria = "Senior";
+                } else {
+                    categoria = "No aplicable";
+                }
+
+                
+                resultado.textContent = `Tienes ${edad} años. Tu categoría es: ${categoria}.`;
+            }
+        </script>
+    </section>
+
+    <footer>
+        <p>E-mail: juanbahi@hotmail.com </p>
+    </footer>
+</body>
+</html>

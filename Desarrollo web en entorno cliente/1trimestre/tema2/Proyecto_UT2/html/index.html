@@ -17,7 +17,7 @@
       <div class="cont">
         <div class="row sin-margen mt-5 justify-content-center">
 
-          <div class="col carta-box col-5 m-3">
+          <div class="col carta-box-icm col-5 m-3">
 
             <div class="carta">    
               <div class="cara">
@@ -26,7 +26,7 @@
                     <h2>Calculadora de IMC</h2>
                   </div>
                   <div class="col-12">
-                    <form action="" onsubmit="calcularIMC()">
+                    <form action="" onsubmit="calcularIMC(event)">
                             <p>Dime tu altura: <input type="number" step="0.01" name="altura" required></p>
                             <p>Dime tu peso en kg: <input type="number" step="0.01" name="peso" required></p>
     
@@ -38,13 +38,12 @@
               </div>
               <div class="cara detras">
                 <div id="resultado_imc"></div>
-                <button class="button b_volver" onclick="volver()">Volver</button>
               </div>    
             </div>
             
           </div>
 
-          <div class="col carta-box col-5 m-3">
+          <div class="col carta-box-fcm col-5 m-3">
 
             <div class="carta">
               <div class="cara">
@@ -53,10 +52,12 @@
                     <h2>Calculadora de FCM</h2>
                   </div>
                   <div class="col-12">
-                    <form action="" onsubmit="calcularFCM()">
-                            <p>Dime tu edad: <input type="number" name="edad" required></p>
-                            <p>Dime tu sexo: <input type="text" name="sexo" required></p>
-    
+                    <form action="" onsubmit="calcularFCM(event)">
+                          <p>Dime tu edad: <input type="number" name="edad" required></p>
+                          <select name="sexo" required>
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                          </select><br><br>
                         <input class="button b1" type="submit" value="Mostrar">
                         <input class="button b2" type="reset" value="Borrar">
                     </form>
@@ -65,17 +66,28 @@
               </div>
               <div class="cara detras">
                 <div id="resultado_fcm"></div>
-                <button class="button b_volver" onclick="volver()">Volver</button>
               </div>  
             </div>
 
           </div>
 
-          <div class="col col-5 m-3">
+          <div class="col carta-box-categoria col-5 m-3">
 
             <div class="carta">
               <div class="cara">
-                <h2>Calculadora de categoría</h2>
+                <div class="row">
+                  <div class="col-12">
+                    <h2>Calculadora de categoría</h2>
+                  </div>
+                  <div class="col-12">
+                    <form action="" onsubmit="calcularCategoria(event)">
+                          <p>Dime tu fecha de nacimiento: <input type="date" name="nacimiento" required></p>
+                          
+                        <input class="button b1" type="submit" value="Mostrar">
+                        <input class="button b2" type="reset" value="Borrar">
+                    </form>
+                  </div>
+                </div>
               </div>
               <div class="cara detras">
                 <div id="resultado_categoria"></div>
@@ -88,11 +100,8 @@
 
             <div class="carta">
               <div class="cara">
-                <h2>Horario de la asociación</h2>
+                <a href="horario.html"><h2>Horario de la asociación</h2></a>
               </div>
-              <div class="cara detras">
-                <div id="resultado_asociación"></div>
-              </div>  
             </div>
 
           </div>
